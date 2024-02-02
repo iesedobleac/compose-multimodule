@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Compose Multimodule"
 include(":app")
+include(":analytics")
