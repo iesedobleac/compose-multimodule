@@ -1,6 +1,6 @@
 [versions]
 agp = "8.2.2"
-kotlin = "1.9.0"
+kotlin = "1.9.21"
 core-ktx = "1.12.0"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
@@ -10,6 +10,7 @@ activity-compose = "1.8.2"
 compose-bom = "2024.01.00"
 appcompat = "1.6.1"
 material = "1.11.0"
+androidxComposeCompiler = "1.5.7"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -18,7 +19,7 @@ androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
 ui = { group = "androidx.compose.ui", name = "ui" }
 ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
@@ -36,4 +37,12 @@ tools-gradle = { group = "com.android.tools.build", name = "gradle", version.ref
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+
+# Plugins defined by this project
+
+base-android-application-configuration = { id = "base.android.application.configuration", version = "unspecified" }
+base-android-application-compose = { id = "base.android.application.compose", version = "unspecified" }
+base-android-library-configuration = { id = "base.android.library.configuration", version = "unspecified" }
+base-android-library-compose = { id = "base.android.library.compose", version = "unspecified" }
+
 
